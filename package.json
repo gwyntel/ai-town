@@ -10,7 +10,8 @@
     "dev:backend": "just convex dev --tail-logs",
     "dev:frontend": "vite",
     "test": "NODE_OPTIONS=--experimental-vm-modules jest --verbose",
-    "le": "vite src/editor/"
+    "le": "vite src/editor/",
+    "start": "vite preview --host 0.0.0.0 --port $PORT"
   },
   "dependencies": {
     "@clerk/clerk-react": "^4.27.0",
