@@ -16,18 +16,5 @@ export default defineConfig({
       }
     }
   },
-  base: '/',
-  build: {
-    assetsDir: 'assets',
-    rollupOptions: {
-      output: {
-        assetFileNames: (assetInfo) => {
-          if (assetInfo.name === '32x32folk.png') {
-            return 'assets/[name][extname]';
-          }
-          return 'assets/[name]-[hash][extname]';
-        }
-      }
-    }
-  }
+  base: '/'
 });
